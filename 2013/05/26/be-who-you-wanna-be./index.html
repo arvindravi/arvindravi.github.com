@@ -20,129 +20,154 @@
 
   <link href="/favicon.png" rel="icon">
   <link rel="alternate" href="/atom.xml" title="Arvind Ravi" type="application/atom+xml">
-  <link rel="stylesheet" href="/stylesheets/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="/stylesheets/social_foundicons.css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.8.3.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('#sidebar').delay(400).animate({ width: '285px' }, 500, function() {
+      $('.personal-info').css({display: 'table'}).hide().fadeIn(500);
+    });
+  });
+  </script>
   
 </head>
 
 
 <body>
-        <script type="text/javascript">
-        /**
-         * 回到页面顶部
-         * @param acceleration 加速度
-         * @param time 时间间隔 (毫秒)
-         **/
-        function goTop(acceleration, time) {
-            acceleration = acceleration || 0.1;
-            time = time || 16;
-
-            var x1 = 0;
-            var y1 = 0;
-            var x2 = 0;
-            var y2 = 0;
-            var x3 = 0;
-            var y3 = 0;
-
-            if (document.documentElement) {
-                x1 = document.documentElement.scrollLeft || 0;
-                y1 = document.documentElement.scrollTop || 0;
-            }
-            if (document.body) {
-                x2 = document.body.scrollLeft || 0;
-                y2 = document.body.scrollTop || 0;
-            }
-            var x3 = window.scrollX || 0;
-            var y3 = window.scrollY || 0;
-
-            // 滚动条到页面顶部的水平距离
-            var x = Math.max(x1, Math.max(x2, x3));
-            // 滚动条到页面顶部的垂直距离
-            var y = Math.max(y1, Math.max(y2, y3));
-
-            // 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小
-            var speed = 1 + acceleration;
-            window.scrollTo(Math.floor(x / speed), Math.floor(y / speed));
-
-            // 如果距离不为零, 继续调用迭代本函数
-            if(x > 0 || y > 0) {
-                var invokeFunction = "goTop(" + acceleration + ", " + time + ")";
-                window.setTimeout(invokeFunction, time);
-            }
-        }
-    </script>
-    <a href="#" onclick="goTop();return false;" class="backTop">▲</a>
-        <header>
-            <div class="wrapper">
-                <div class="center">
-                    <div class="searchBox"></div>
-                    <div class="headerMenu">
-                        <ul>
-                            
-                            <li><a href="/">Home</a></li>
-                            
-                            <li><a href="/archives">Archives</a></li>
-                            
-                        </ul>
-                    </div>
-                    <div class="socnets">
-                        
-                        
-                        <a href="/atom.xml" alt="rss"><i class="foundicon-rss"></i></a>
-                        
-                        <a href="mailto:arvind.ravi@aol.in"><i class="foundicon-chat"></i></a>
-                        
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="main">
-                        <div class="brand">
-                <div class="wide">
-                    <div class="center">
-                        <h1>
-                            <a href="/">Arvind Ravi</a>
-                        </h1>
-                        <p>
-                            My vent for thoughts.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="content"><div class="wide">
-    <div class="center">
-        <div class="head">
-            <div class="timeLine">
-                <time datetime="2013-05-26T07:35:35.000Z" class="date">
-                    <a href="/2013/05/26/be-who-you-wanna-be./">May 26 2013</a>
-                </time>
-            </div>
-        </div>
-        
-  
-    <h2 class="title">Be who you wanna be.</h1>
-  
-
-        <div class="entry">
-        
-          <p>Not often we get to do what we like to, but if we look at things in a different perspective, we tend to realize who we are, and what we&#39;d like to be, in the end, is our choice. Very often we tend to lose sight of the purpose of our lives, what we need to understand is, its never too late to start living. This is your life, Be who you wanna be.</p>
-
-        
-        
-        </div>
-    </div>
+  <header id="header" class="inner"><!-- <div class="alignleft">
+  <h1><a href="/">Arvind Ravi</a></h1>
+  <h2><a href="/">My vent for thoughts.</a></h2>
 </div>
-                </div>
-        </div>
+ --><!-- <nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+ --></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignright"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon depth"></div>
+        <time class="depth" datetime="2013-05-26T07:35:35.000Z"><a href="/2013/05/26/be-who-you-wanna-be./">May 26 2013</a></time>
+      
+      
+  
+    <h1 class="depth title">Be who you wanna be.</h1>
+  
 
-  <footer>
+    </header>
+    <div class="entry depth">
+      
+        <p>Not often we get to do what we like to, but if we look at things in a different perspective, we tend to realize who we are, and what we&#39;d like to be, in the end, is our choice. Very often we tend to lose sight of the purpose of our lives, what we need to understand is, its never too late to start living. This is your life, Be who you wanna be.</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+</div></div>
+    <aside id="sidebar" class="alignleft"><!-- 
   
-  &copy; 2013 Arvind Ravi
+<div class="widget tag">
+  <h3 class="title">Categories</h3>
+  <ul class="entry">
   
-</footer>
+    <li><a href="/categories/Fruit/">Fruit</a><small>0</small></li>
+  
+    <li><a href="/categories/Fruits/Fruit/">Fruit</a><small>0</small></li>
+  
+    <li><a href="/categories/Fruits/">Fruits</a><small>0</small></li>
+  
+  </ul>
+</div>
+
+
+  
+
+  
+<div class="widget twitter">
+  <h3 class="title">Tweets</h3>
+  <ul id="tweets"></ul>
+</div>
+
+<script type="text/javascript">
+var twitter_stream = ['arviiiind', 5, false];
+var moment_js_path = '/js/moment.min.js';
+</script>
+<script src="/js/twitter.js"></script>
+
+
+ -->
+<div class="personal-info">
+  <figure>
+    
+      <a href="/">
+        <img class="personal-photo" src="https://dl.dropboxusercontent.com/u/28152895/p2.jpg" alt="Arvind Ravi">
+      </a>
+    
+    <figcaption>
+      <h3 class=>Arvind Ravi</h3>
+      <p>Agnost. Music Lover. Travel Enthusiast.</p>
+    </figcaption>
+  </figure>
+  <section class="social">
+    
+      <a target="_blank" class="icon twitter depth" href="http://twitter.com/arviiiind"></a>
+    
+    
+      <a target="_blank" class="icon facebook depth" href="http://fb.com/arvindravi.6"></a> 
+    
+    
+      <a target="_blank" class="icon github depth" href="http://github.com/arvindravi"></a>
+    
+    
+      <a target="_blank" class="icon email depth" href="mailto:arvind.ravi@aol.in"></a>
+    
+  </section>
+</div>
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignright depth">
+  <a href="http://github.com/thiagopnts/hexo-persona-dark" style="text-decoration: underline;">Persona Dark Theme</a> 
+  &copy; - 2013 Arvind Ravi
+  
+</div>
+<div class="clearfix"></div></footer>
   <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 
